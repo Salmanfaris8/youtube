@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body class="bg-black">
+    <nav class="position-fixed w-100 top-0 z-1 bg-black">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex ">
+              <a id="menu" class="nav-link text-white" href=""><i class='bx bx-menu fs-3 ms-xl-3 mt-2 me-xl-3 rounded-circle p-2 men' ></i></a>
+                <a class="logo mt-3" href=""><img width="30px" src="./images/logo1.png" alt=""></a>
+                <a class="nav-link" href=""><h2 class="text-white fs-5 ms-1 mt-3">Youtube</h2></a>
+                <a class="nav-link" href=""><span class="text-secondary mt-2 ms-1 nav-sp">IN</span></a>
+            </div>
+            <div class="w-50">
+                <div class="container-fluid pt-2 d-flex">
+                    <input class="rounded-start-pill ps-3 w-100 d-none d-md-block border border-secondary bg-black" type="search" 
+                        placeholder="Search">
+                    <a class="nav-link border border-secondary pt-2 ps-2 pe-3 d-none d-md-block bg-dark rounded-end-circle" href=""><i
+                            class='bx bx-search fs-4 text-white'></i></a>
+                    <a class="nav-link ms-2 bg-dark rounded-circle d-none d-md-block" href=""><i class='bx bxs-microphone fs-4 p-2 text-white'></i></a>
+                </div>
+            </div>
+            <div class="d-flex me-3 pt-2">
+              <a class="nav-link d-sm-block d-md-none" href=""><i class='bx bx-search fs-3 text-white rounded-circle men p-2'></i></a>
+              <a class="nav-link ms-md-2 d-sm-block d-md-none spek" href=""><i class='bx bx-bell fs-3 p-2 h-100 text-white rounded-circle men'></i></a>
+                <a class="nav-link d-none d-md-block ms-md-4" href=""><i class='bx bx-video-plus text-white fs-4 rounded-circle p-2 men'></i></a>
+                <a class="nav-link d-none d-md-block ms-3" href=""><i class='bx bx-bell text-white fs-4 rounded-circle p-2 men'></i></a>
+                <a class="nav-link ms-md-3" href=""><img width="35px" src="https://www.pngrepo.com/png/402071/512/letter-s.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="d-md-flex justify-content-between mt-2">
+        <div>
+          <div class="fix d-none d-xl-block">
+            <a class="nav-link text-white bg-dark p-2 ps-3 pe-5 rounded" href=""><i class='bx bxs-home me-4 fs-5'></i>Home</a>
+            <a class="hm nav-link text-white p-1 ps-2 pe-5 rounded" href=""><img class="me-3" width="35" src="./images/shorts.png" alt="">Shorts</a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><i class='bx bx-slideshow me-4 fs-5'></i>Subscriptions</a>
+            <hr class="text-white">
+            <a class="hm nav-link text-white p-1 ps-3 pe-5 rounded fw-bold" href=""><div class="d-flex">You<i class='bx bx-chevron-right ps-1 fs-4'></i></div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-history fs-4 me-4'></i>History</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bxs-playlist fs-4 me-4'></i>Playlists</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-time-five fs-4 me-4'></i>Watch later</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-like fs-4 me-4' ></i>Liked videos</div></a>
+            <hr class="text-white">
+            <span class="text-white ps-3 fw-bold">Explore</span>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bxs-hot fs-4 me-4'></i>Trending</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-shopping-bag fs-4 me-4'></i>Shopping</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-music fs-4 me-4'></i>Music</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-movie fs-4 me-4'></i>Movies</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-station fs-4 me-4'></i>Live</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-joystick fs-4 me-4'></i>Gaming</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-news fs-4 me-4' ></i>News</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-trophy fs-4 me-4' ></i>Sports</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-bulb fs-4 me-4'></i></i>Courses</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex"><i class='bx bx-closet fs-4 me-4'></i>Fashion&Beauty</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex "><i class='bx bx-podcast fs-4 me-4' ></i>Podcasts</div></a>
+            <hr class="text-white">
+            <span class="text-white ps-3 fw-bold">More from YouTube</span>
+            <a class="hm nav-link text-white p-2 ps-3 pe-4 rounded" href=""><img class="me-4" width="25" src="./images/logo1.png" alt="">Youtube Premium</a>
+            <a class="hm nav-link text-white p-2 ps-2 pe-5 rounded" href=""><img class="me-3" width="40" src="https://logos-world.net/wp-content/uploads/2021/04/Youtube-Music-Logo.png" alt="">Youtube Music</a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-4 rounded" href=""><img class="me-4" width="25" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/YouTube_Kids_LogoVector.svg/1200px-YouTube_Kids_LogoVector.svg.png" alt="">Youtube Kids</a>
+            <hr class="text-white">
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex "><i class='bx bx-cog fs-4 me-4'></i>Settings</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex "><i class='bx bx-flag fs-4 me-4'></i>Report history</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex "><i class='bx bx-help-circle fs-4 me-4' ></i>Help</div></a>
+            <a class="hm nav-link text-white p-2 ps-3 pe-5 rounded" href=""><div class="d-flex "><i class='bx bx-comment-error fs-4 me-4'></i>Send feedback</div></a>
+            <hr class="text-white">
+            <div class="about">
+              <div class="d-flex justify-content-start fw-bold">
+                <a class="nav-link text-secondary ms-3" href="">About</a>
+                <a class="nav-link text-secondary ms-3" href="">Press</a>
+                <a class="nav-link text-secondary ms-3" href="">Copyright</a>
+              </div>
+              <div class="d-flex justify-content-start fw-bold">
+                <a class="nav-link text-secondary ms-3" href="">Contact us</a>
+                <a class="nav-link text-secondary ms-3" href="">Creators</a>
+              </div>
+              <div class="d-flex justify-content-start fw-bold mb-3">
+                <a class="nav-link text-secondary ms-3" href="">Advertise</a>
+                <a class="nav-link text-secondary ms-3" href="">Developers</a>
+              </div>
+              <div class="d-flex justify-content-start fw-bold">
+                <a class="nav-link text-secondary ms-3" href="">Terms</a>
+                <a class="nav-link text-secondary ms-2" href="">Privacy</a>
+                <a class="nav-link text-secondary ms-2" href="">Policy & Safety</a>
+              </div>
+              <div class=" fw-bold">
+                <a class="nav-link text-secondary ms-3" href="">How Youtube works</a>
+              </div>
+              <div class=" fw-bold mb-3">
+                <a class="nav-link text-secondary ms-3" href="">Test new features</a>
+              </div>
+              <div>
+                <p class="ms-3 copy">&copy; 2024 Google LLC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mar">
+          <div class="top d-md-flex d-none bg-black position-fixed z-1 ms-xl-2 pt-4 w-100">
+            <div><a class="bg-white nav-link p-1 ps-2 pe-2 rounded-3 ms-4" href="">All</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">News</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">Music</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">Trailers</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">Dramedy</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">4K resolution</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">Gaming</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">bluetooth</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3" href="">Mixes</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3 d-none d-lg-block" href="">RC cars</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3 d-none d-lg-block" href="">HTML5</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3 d-none d-lg-block" href="">Scale models</a></div>
+            <div><a class="bg-dark text-white nav-link ms-3 p-1 ps-2 pe-2 rounded-3 d-none d-lg-block" href="">legos</a></div>
+            <div><a class="text-white nav-link ms-xl-3 p-1 ps-2 pe-2 rounded-3" href=""><i class='bx bx-chevron-right fs-4 men rounded-circle'></i></a></div>
+          </div>
+          <div class="mt-5">
+            <div class="d-flex justify-content-center flex-wrap">
+              <div class="main d-flex flex-column rounded-3">
+                <div class="p-2">
+                   <div class="img img1 rounded-3 d-flex align-items-end justify-content-end">
+                    <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded"><i class="fa-thin fa-square-arrow-up-right"></i></span>
+                   </div>
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-white mt-2">Apply now for $200k,on us</h6>
+                    <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                  </div>
+                  <p class="text-secondary d-none d-md-inline mt-2">Up to $200K in Google Cloud credits and technology for faster launches</p>
+                  <h6 class="text-white">Sponsored . <span class="fw-normal text-secondary">Google Cloud Startups</span></h6>
+                </div>
+              </div>
+              <div class="main main2 d-flex flex-column rounded-3">
+                <div class="p-2">
+                   <div class="img img2 rounded-3"></div>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex mt-2">
+                      <img class="rounded-circle" width="35" height="35" src="https://yt3.ggpht.com/-U68Ei2nk53E/AAAAAAAAAAI/AAAAAAAAAAA/wkVcV9NxTUc/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="">
+                      <h6 class="text-white ms-2 lh-sm">24 News Live TV | Live Updates | Malayalam News Live | HD Live | Wayanad Landslide  </h6>
+                    </div>
+                    <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                  </div>
+                  <span class="text-secondary d-none d-md-inline ms-5 fw-medium">24 News<i class='bx bxs-check-circle ms-1'></i></span><br>
+                  <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">71k Watching</span>
+                </div>
+              </div>
+              <div class="main main3 d-flex flex-column rounded-3">
+                <div class="p-2">
+                   <div class="img img3 rounded-3 d-flex align-items-end justify-content-end">
+                    <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded">2:44</span>
+                   </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex mt-2">
+                      <img class="rounded-circle" width="35" height="35" src="https://th.bing.com/th/id/OIP.bVdTgPZpFsnR0JKgsSYTIwHaHa?w=900&h=900&rs=1&pid=ImgDetMain" alt="">
+                      <h6 class="text-white ms-2 lh-sm">TRANSFORMERS ONE | Official Trailer 2 (2024 Movie)-Chris Hemsworth,Brian...</h6>
+                    </div>
+                    <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                  </div>
+                  <span class="text-secondary d-none d-md-inline ms-5 fw-medium">Paramount Pictures<i class='bx bxs-check-circle ms-1'></i></span><br>
+                  <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">12M views . 5 days ago</span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-sm-4 flex-wrap">
+              <div class="main main2 d-flex flex-column rounded-3">
+                <div class="p-2">
+                   <div class="img img4 rounded-3 d-flex align-items-end justify-content-end">
+                    <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded">3:55</span>
+                   </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex mt-2">
+                      <img class="rounded-circle" width="35" height="35" src="https://yt3.googleusercontent.com/_rO8IOjqWOx-nB8q3TX0Wag1McsdxxNgT2CF9m-oLU5U7H-p0QdEuPkDC37Hjldu7pjzd0X4Og=s160-c-k-c0x00ffffff-no-rj" alt="">
+                      <h6 class="text-white ms-2 lh-sm">Hanumankind - Big Dawgs | Ft. Kalmi (Official Music Video) | Def Jam India</h6>
+                    </div>
+                    <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                  </div>
+                  <span class="text-secondary d-none d-md-inline ms-5 fw-medium">Hanumankind<i class='bx bxs-music ms-1'></i></span><br>
+                  <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">9.6M views . 3 weeks ago</span>
+                </div>
+              </div>
+              <div class="main main3 d-flex flex-column rounded-3">
+                <div class="p-2">
+                   <div class="img img-mix img5 rounded-3 d-flex align-items-end justify-content-end">
+                    <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded"><i class='bx bx-station'></i> mix</span>
+                   </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex mt-2">
+                      <h6 class="text-white ms-1 lh-sm">Mix - Sabrina Carpenter - Espresso (Official Video)</h6>
+                    </div>
+                    <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                  </div>
+                  <span class="text-secondary ms-1 fw-medium">Sabrina Carpenter, Ariana Grande, and more</span><br>
+                </div>
+              </div>
+              <div class="main d-flex flex-column rounded-3">
+                <div class="p-2">
+                   <div class="img img6 rounded-3 d-flex align-items-end justify-content-end">
+                    <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded">14:07</span>
+                   </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="d-flex mt-2">
+                      <img class="rounded-circle" width="35" height="35" src="https://wallpapercave.com/wp/wp8209468.jpg" alt="">
+                      <h6 class="text-white ms-2 lh-sm">Travis Scott - FE!N ft. Playboi Carti</h6>
+                    </div>
+                    <a href=""><i class='bx bx-dots-vertical-rounded text-white ms-5 fs-5 mt-2'></i></a>
+                  </div>
+                  <span class="text-secondary d-none d-md-inline ms-5 fw-medium">Travis Scott <i class='bx bxs-music' ></i></span><br>
+                  <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">54M views . 4 month ago</span>
+                </div>
+              </div>
+            </div><br>
+            <div class="d-flex justify-content-between">
+              <div class="ms-4">
+                <img class="pb-1" width="25" height="" src="https://www.edigitalagency.com.au/wp-content/uploads/Youtube-shorts-icon-png.png" alt="">
+                <span class="fs-5 fw-bold text-white">Shorts</span>
+              </div>
+              <a class="nav-link text-white me-2" href=""><i class='bx bx-x fs-2 rounded-circle p-1 men'></i></a>
+            </div><br>
+            <div class="d-flex justify-content-center flex-wrap ms-2">
+              <div class="shorts rounded-3 d-none d-sm-flex flex-column align-items-center pt-2">
+                <img class="rounded-3" width="230px" height="370px" src="https://images.pexels.com/photos/6929219/pexels-photo-6929219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <div class="d-flex justify-content-center pe-1">
+                  <div class="d-flex mt-2">
+                    <h6 class="text-white ms-2 lh-sm">Learn English: ✈️ Conversation on the plane...</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <div class="text-start ms-2 w-100"><span class="text-secondary ms-1 fw-medium">38M views</span></div>
+              </div>
+              <div class="shorts rounded-3 d-none d-sm-flex flex-column align-items-center pt-2">
+                <img class="rounded-3" width="230px" height="370px" src="https://th.bing.com/th/id/R.79b3f8a15bc3403382a0d2627fa9343a?rik=sJS5iCGJLnVaHg&riu=http%3a%2f%2fi.dailymail.co.uk%2fi%2fpix%2f2012%2f02%2f13%2farticle-2100319-11B5FF02000005DC-42_470x710.jpg&ehk=XfE7%2bnPWGKd6YfVqZ6aQ7%2bW1DVFw54J26yC8gnbW9y4%3d&risl=&pid=ImgRaw&r=0" alt="">
+                <div class="d-flex justify-content-center pe-1">
+                  <div class="d-flex mt-2">
+                    <h6 class="text-white ms-2 lh-sm">Adele LIVE - Set Fire to the Rain 🔥🌧️</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <div class="text-start ms-2 w-100"><span class="text-secondary ms-1 fw-medium">17M views</span></div>
+              </div>
+              <div class="shorts rounded-3 d-none d-sm-flex flex-column align-items-center pt-2">
+                <img class="rounded-3" width="230px" height="370px" src="https://www.picclickimg.com/ei4AAOSw0FJlbMBl/LEGO-Technic-PEUGEOT-9X8-24H-Le-Mans-Hypercar.webp" alt="">
+                <div class="d-flex justify-content-center pe-1">
+                  <div class="d-flex mt-2">
+                    <h6 class="text-white ms-2 lh-sm">LEGO 42156 Preview | LEGO Technic Peugeot 9X8 Le...</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <div class="text-start ms-2 w-100"><span class="text-secondary ms-1 fw-medium">334K views</span></div>
+              </div>
+              <div class="shorts rounded-3 d-flex flex-column align-items-center pt-2">
+                <img class="rounded-3" width="230px" height="370px" src="./images/car.jpg" alt="">
+                <div class="d-flex justify-content-center pe-1">
+                  <div class="d-flex mt-2">
+                    <h6 class="text-white ms-2 lh-sm">Tarmac Works Mercedes-AMG F1 Grand Prix 2020...</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <div class="text-start ms-2 w-100"><span class="text-secondary ms-1 fw-medium">8.4M views</span></div>
+              </div>
+              <div class="shorts rounded-3 d-lg-flex flex-column d-none  align-items-center pt-2">
+                <img class="rounded-3" width="230px" height="370px" src="https://th.bing.com/th/id/OIP.Kib6prfECVUIuvQfZFPfmQAAAA?rs=1&pid=ImgDetMain" alt="">
+                <div class="d-flex justify-content-center pe-1">
+                  <div class="d-flex mt-2">
+                    <h6 class="text-white ms-2 lh-sm">Kendall Jenner walks under the Eiffel Tower 🔥 L'Oréal...</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <div class="text-start ms-2 w-100"><span class="text-secondary ms-1 fw-medium">938K views</span></div>
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="d-flex justify-content-center flex-wrap">
+            <div class="main d-flex flex-column rounded-3">
+              <div class="p-2">
+                 <div class="img img7 rounded-3"></div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex mt-2">
+                    <img class="rounded-circle" width="35" height="35" src="https://yt3.googleusercontent.com/ytc/AIdro_mdxzvsfx8mNSSRcQCqGp6bPufSFMzDAPOGEGh2ZjV0ykg=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    <h6 class="text-white mt-2 ms-2 lh-sm"> Anuv Jain - GUL (Studio)</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <span class="text-secondary d-none d-md-inline ms-5 fw-medium">Anuv Jain<i class='bx bxs-music ms-1'></i></span><br>
+                <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">53M views . 3 years ago</span>
+              </div>
+            </div>
+            <div class="main main2 d-flex flex-column rounded-3">
+              <div class="p-2">
+                 <div class="img img8 rounded-3"></div>
+                <div class="d-flex justify-content-center">
+                  <div class="d-flex mt-2">
+                    <img class="rounded-circle" width="35" height="35" src="https://yt3.googleusercontent.com/gEuga1T09RrSUwzWCqgkQdpNgQvyVQ7u5RZ-_1tPLd4nI-l0riEpLGUgQI7UlSXm9B7DlmkEyw=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    <h6 class="text-white ms-2 lh-sm">The Most BEAUTIFUL Earth Video You'll Ever See in 4K HDR 60 FPS </h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <span class="text-secondary d-none d-md-inline ms-5 fw-medium">8K Paradise<i class='bx bxs-check-circle ms-1'></i></span><br>
+                <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">18M views . 7 months ago</span>
+              </div>
+            </div>
+            <div class="main d-flex flex-column rounded-3">
+              <div class="p-2">
+                 <div class="img img9 rounded-3 d-flex align-items-end justify-content-end">
+                  <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded">2:44</span>
+                 </div>
+                <div class="d-flex justify-content-center">
+                  <div class="d-flex mt-2">
+                    <img class="rounded-circle" width="35" height="35" src="https://yt3.googleusercontent.com/a4AOsw2qHfuXAooYs7EMkwqJMmW_Wbqebpzm8Xmf2Rj_95QMLnAAFDNRNOJG-sSoairOXvQKrS8=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    <h6 class="text-white ms-2 lh-sm">Malayalam Original | Churuli | Chemban Vinod, Vinay Fort, Joju George, Lijo Jose...</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <span class="text-secondary d-none d-md-inline ms-5 fw-medium">Sony LIV<i class='bx bxs-check-circle ms-1'></i></span><br>
+                <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">938K views . 1 year ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4 flex-wrap">
+            <div class="main main2 d-flex flex-column rounded-3">
+              <div class="p-2">
+                 <div class="img img10 rounded-3 d-flex align-items-end justify-content-end">
+                  <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded">3:55</span>
+                 </div>
+                <div class="d-flex justify-content-center">
+                  <div class="d-flex mt-2">
+                    <img class="rounded-circle" width="35" height="35" src="https://yt3.googleusercontent.com/Q0t5zTKg2h9IS5NvbK4RMNCsT0Z7U9pUiRfODNJVjuBmhz7kDaPinRnCzPvgh9eWXhDqD7vK4E0=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    <h6 class="text-white ms-2 lh-sm">Coldplay - A Sky Full Of Stars (Live at River Plate)</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <span class="text-secondary d-none d-md-inline ms-5 fw-medium">Coldplay<i class='bx bxs-music ms-1'></i></span><br>
+                <span class="fw-normal text-secondary d-none d-md-block ms-5 fw-medium">81M views . 1 year ago</span>
+              </div>
+            </div>
+            <div class="main main3 d-flex flex-column rounded-3">
+              <div class="p-2">
+                 <div class="img img11 rounded-3 d-flex align-items-end justify-content-end">
+                  <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded"><i class='bx bx-station'></i> mix</span>
+                 </div>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex mt-2">
+                    <h6 class="text-white ms-1 lh-sm">Mix - Anuv Jain - HUSN (Official Video)</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <span class="text-secondary ms-1 fw-medium">Uraan, Karthik, Anuv Jain, and more</span><br>
+              </div>
+            </div>
+            <div class="main main2 d-flex flex-column rounded-3">
+              <div class="p-2">
+                 <div class="img img12 rounded-3 d-flex align-items-end justify-content-end">
+                  <span class="bg-dark ps-1 pe-1 text-end me-2 text-white mb-2 rounded">14:07</span>
+                 </div>
+                <div class="d-flex justify-content-center">
+                  <div class="d-flex mt-2">
+                    <img class="rounded-circle" width="35" height="35" src="https://yt3.googleusercontent.com/G7RwPjgSY7__7VqZ0GnLITAcbnJGrmovBoZvIIhBXT-LUHqUeG5JZv3C_vp7jNh_x9z-oVc7=s160-c-k-c0x00ffffff-no-rj" alt="">
+                    <h6 class="text-white ms-2 lh-sm">Black Myth: Wukong - Pre-Orders Now Available | August 20, 2024 - Confront Destiny</h6>
+                  </div>
+                  <a href=""><i class='bx bx-dots-vertical-rounded text-white fs-5 mt-2'></i></a>
+                </div>
+                <span class="text-secondary d-none d-md-inline ms-5 fw-medium">Black Myth: Wukong</span><br>
+                <span class="fw-normal d-none d-md-block text-secondary ms-5 fw-medium">1M views . 1 month ago</span>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

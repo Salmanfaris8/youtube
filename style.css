@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav-sp{
+    font-size: 11px;
+}
+.men:hover{
+    background-color: rgba(54, 53, 53, 0.685);
+}
+.hm:hover{
+    background-color: rgba(33, 37, 41);
+}
+::placeholder{
+    color: gray;
+    font-weight: 500;
+}
+.spek{
+    border-radius: 50%;
+}
+.about{
+    font-size: 12px;
+}
+.copy{
+    color: gray;
+}
+.fix{
+    position: fixed;
+    z-index: 1;
+    overflow-y: scroll;
+    top:0;
+    bottom: 0;
+    margin-top: 70px;
+    scrollbar-width: none;
+}
+.mar{
+    margin-top: 60px;
+}
+.top{
+    margin-top: -16px;
+}
+.main{
+    width: 400px;
+    height: 340px;
+    cursor: pointer;
+}
+.main:hover{
+    background-color: rgba(155, 141, 141, 0.323);
+}
+.main2:hover{
+    background-color: rgba(163, 68, 68, 0.323);
+}
+.main3:hover{
+    background-color: rgba(60, 92, 156, 0.323);
+}
+.img{
+    width: 384px;
+    height: 200px;
+}
+.img1{
+    background-image: url(https://1.bp.blogspot.com/-kzOXTGGwka4/YSPSwX4gDbI/AAAAAAAAKts/HVy_EAOkMysTGPDp1bDFlp8303sMMp8HwCLcBGAsYHQ/s0/Startup_Promo-Banners-1200x628.png);
+    background-size: cover;
+}
+.img2{
+    background-image: url(./images/24news.jpg);
+    background-size: cover;
+}
+.img3{
+    background-image: url(https://i.ytimg.com/vi/aWEXhj458rA/mqdefault.jpg);
+    background-size: contain;
+}
+.img4{
+    background-image: url(https://static.toiimg.com/thumb/msid-112024673,imgsize-69220,width-400,resizemode-4/112024673.jpg);
+    background-size: cover;
+}
+.img5{
+    background-image: url(https://th.bing.com/th/id/OIP.5Ovk9HoyOh10i4nufAdBtQAAAA?w=311&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-size: contain;
+}
+.img6{
+    background-image: url(https://th.bing.com/th/id/OIP.41iW2BBuRA19DHoPHW0HvAHaEK?rs=1&pid=ImgDetMain);
+    background-size: contain;
+}
+.img7{
+    background-image: url(https://images.businessupturn.com/wp-content/uploads/2024/01/1-5.jpg);
+    background-size: cover;
+}
+.img8{
+    background-image: url(https://i.ytimg.com/vi/qBpofSd4j4Y/maxresdefault.jpg);
+    background-size: cover;
+}
+.img9{
+    background-image: url(https://images.ottplay.com/images/churuli-724.jpeg);
+    background-size: cover;
+}
+.img10{
+    background-image: url(https://i.ytimg.com/vi/Fpn1imb9qZg/maxresdefault.jpg);
+    background-size: cover;
+}
+.img11{
+    background-image: url(https://th.bing.com/th/id/OIP.3jp0SiATfpE6DXXj3lZwfgHaEK?rs=1&pid=ImgDetMain);
+    background-size: cover;
+}
+.img12{
+    background-image: url(https://cdn1.epicgames.com/spt-assets/ca9ef1bcf2f54043baac351366aec677/black-myth-wukong-1l4n1.png);
+    background-size: cover;
+}
+.lv-a1{
+    width: 55px;
+}
+.shorts{
+    width: 245px;
+    height: 470px;
+    cursor: pointer;
+}
+.shorts:hover{
+    background-color: rgba(155, 141, 141, 0.323);
+}
+.show{
+    z-index: 1;
+    width: 1230px;
+    margin-top: -40px;
+}
+@media(max-width:480px){
+    .main{
+        width: 340px;
+        height: 280px;
+    }
+    .img{
+        width: 324px;
+        height: 170px;
+    }
+}
